@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnBracketOpen"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="("
+        android:textAlignment="center"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/thirdColGuideline"
+        app:layout_constraintStart_toStartOf="@id/secondColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/outputGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnLN"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="ln"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnFactorial"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="x!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/firstColGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSquared"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/squared"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/secondColGuideline"
+        app:layout_constraintStart_toStartOf="@id/firstColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/division"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnMultiplication"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/multiplication"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fourthRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSubtraction"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/subtraction"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/fifthRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/fourthRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnAddition"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/addition"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/sixthRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/fifthRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnEquals"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/equals"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/sixthRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSquareRoot"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/square_root"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/thirdColGuideline"
+        app:layout_constraintStart_toStartOf="@id/secondColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnInverse"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="1/x"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/thirdRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/thirdColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnSin"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="sin"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/firstColGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnCos"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="cos"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/secondColGuideline"
+        app:layout_constraintStart_toStartOf="@id/firstColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnTan"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="tan"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/thirdColGuideline"
+        app:layout_constraintStart_toStartOf="@id/secondColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="log"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/secondRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/thirdColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/secondColGuideline"
+        app:layout_constraintStart_toStartOf="@id/firstColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/outputGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/thirdRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fourthRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fifthRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sixthRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/outputGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/secondRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/firstRowGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40218878" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inputGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <TextView
+        android:id="@+id/inputTxtView"
+        android:layout_width="415dp"
+        android:layout_height="113dp"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text=""
+        android:hint="0"
+        android:textColorHint="#9fa19f"
+        android:textAlignment="viewEnd"
+        android:textColor="#A19E9E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/outputTxtView"
+        android:layout_width="415dp"
+        android:layout_height="113dp"
+        android:background="#000"
+        android:gravity="bottom"
+        android:padding="5dp"
+        android:text=""
+        android:textAlignment="viewEnd"
+        android:textColor="#fff"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/outputGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/inputGuideline"
+        tools:ignore="RtlCompat">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/firstColGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstRowGuideline"
+        app:layout_constraintGuide_begin="83dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstRowGuideline"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/secondColGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstRowGuideline"
+        app:layout_constraintGuide_begin="166dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/thirdColGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstRowGuideline"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lastColGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="731dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/firstRowGuideline"
+        app:layout_constraintGuide_percent="0.799999999999" />
+
+    <Button
+        android:id="@+id/btnAC"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="AC"
+        android:textAlignment="center"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/firstColGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/outputGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="More"
+        android:textAlignment="center"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lastColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/outputGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnBracketClosed"
+        android:layout_width="83dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text=")"
+        android:textAlignment="center"
+        android:textColor="#E3690C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/firstRowGuideline"
+        app:layout_constraintStart_toEndOf="@id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/thirdColGuideline"
+        app:layout_constraintTop_toTopOf="@+id/outputGuideline"
+        app:layout_constraintVertical_bias="0.384">
+
+    </Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/keypadFirstCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="110dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/keypadSecondCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.533333" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="7"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fourthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadFirstCol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="8"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fourthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadSecondCol"
+        app:layout_constraintStart_toStartOf="@id/keypadFirstCol"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="9"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fourthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/keypadSecondCol"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="4"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fifthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadFirstCol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="5"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fifthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadSecondCol"
+        app:layout_constraintStart_toStartOf="@id/keypadFirstCol"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="6"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/fifthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/keypadSecondCol"
+        app:layout_constraintTop_toBottomOf="@+id/fourthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="1"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/sixthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadFirstCol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fifthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="2"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/sixthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/keypadSecondCol"
+        app:layout_constraintStart_toStartOf="@id/keypadFirstCol"
+        app:layout_constraintTop_toBottomOf="@+id/fifthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:text="3"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/sixthRowGuideline"
+        app:layout_constraintEnd_toStartOf="@+id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/keypadSecondCol"
+        app:layout_constraintTop_toBottomOf="@+id/fifthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnPI"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="@string/pi"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/keypadFirstCol"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sixthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn0"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/keypadSecondCol"
+        app:layout_constraintStart_toStartOf="@id/keypadFirstCol"
+        app:layout_constraintTop_toBottomOf="@id/sixthRowGuideline">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnDecimal"
+        android:layout_width="110dp"
+        android:layout_height="75dp"
+        android:background="#000"
+        android:gravity="center"
+        android:text="."
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lastColGuideline"
+        app:layout_constraintStart_toStartOf="@id/keypadSecondCol"
+        app:layout_constraintTop_toBottomOf="@id/sixthRowGuideline">
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+        <Button
+            android:id="@+id/length"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="lengthActivity"
+            android:text="Length"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:id="@+id/mass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="massActivity"
+            android:text="mass"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/linear1"
+        >
+
+        <Button
+            android:id="@+id/temperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="temperatureActivity"
+            android:text="Temperature" />
+
+        <Button
+            android:id="@+id/area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:onClick="areaActivity"
+            android:text="Area" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/linear2">
+
+        <Button
+            android:id="@+id/volume"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:text="Volume" />
+
+        <Button
+            android:id="@+id/bmi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="#E3690C"
+            android:textSize="13.5sp"
+            android:background="@drawable/rounded_corners"
+            android:text="BMI (Body Mass Index)" />
+    </LinearLayout>
+
+</RelativeLayout>
